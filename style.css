@@ -48,7 +48,7 @@ body {
 .container {
     text-align: center;
     color: #333;
-    margin-top: 180px;
+    margin-top: 20px;
 }    
 
 h1 {
@@ -84,4 +84,21 @@ h1 {
 img {
     width: 30%;
     margin-top: 1rem; /* Reduzir a margem superior para aproximar a imagem */
+}
+
+@supports (padding-top: env(safe-area-inset-top)) {
+    body {
+        padding-top: calc(60px + env(safe-area-inset-top));
+    }
+
+    header {
+        padding-top: env(safe-area-inset-top);
+    }
+}
+
+/* Media query para dispositivos iOS com notch */
+@media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    header {
+        padding-top: env(safe-area-inset-top);
+    }
 }
