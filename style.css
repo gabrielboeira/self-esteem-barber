@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('images/background.png'); /* Substitua por sua imagem de fundo */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        background-color: #b5b5b5;
+        width: 100%;
+        z-index: 1000;
+        position: fixed; /* Fixa o header no topo */
+        top: 0;
+        left: 0;
+        height: 75px; /* Altura fixa do header */
+    }
+
+/* Logo */
+.box-img-header {
+    height: auto;
+}
+
+.img-logo {
+    max-width: 400px;
+    height: auto;
+    margin-top: -17px;
+    align-items: center;
+    margin-left: 36%;
+}
+
+.img-fundo-main {
+    width: 100%;
+    height: auto;
+    margin-top: 80px; /* Reduzir o espaçamento entre a imagem e o conteúdo */
+}
+
+.container {
+    text-align: center;
+    color: #333;
+    margin-top: 180px;
+}    
+
+h1 {
+    font-size: 3rem;
+    color: #2B2B2B;
+    letter-spacing: 2px;
+
+    margin-top: 0; /* Remover margem superior para aproximar o texto do topo */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px; /* Ajustar a margem superior dos botões */
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #2B2B2B;
+}
+
+img {
+    width: 30%;
+    margin-top: 1rem; /* Reduzir a margem superior para aproximar a imagem */
+}
