@@ -1,8 +1,9 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Bricolage Grotesque", sans-serif;
     background-image: url(images/background.png);
     text-align: center;
-}
+} 
+
 
 header {
     display: flex;
@@ -10,8 +11,9 @@ header {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px 0;
-    background-color: #B5B5B5;
+    background-color: #7a7a7a;
     width: 100%;
     z-index: 1000;
     position: fixed; /* Fixa o header no topo */
@@ -25,6 +27,37 @@ h1 {
     align-items: center;
     justify-content: center;
     margin-left: -50px;
+    color: #000000;
+}
+
+.cabelo {
+    margin-top: 120px;
+    font-size: 33px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: #0a0a0a;
+}
+
+.barba {
+    margin-top: -50px;
+    font-size: 33px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    text-decoration: overline;
+}
+
+.sobrancelha{
+    margin-top: 40px;
+    margin: 10px;
+    font-size: 33px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    text-decoration: overline;
+}
+
+.skin-care {
+    margin-top: 30px;
+    margin: 10px;
+    font-size: 33px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    text-decoration: overline;
 }
 
 .ctt {
@@ -43,7 +76,8 @@ h1 {
 .img-fundo-main {
     width: 100%;
     height: auto;
-    margin-top: 50px; /* Reduzir o espaçamento entre a imagem e o conteúdo */
+    margin-top: 50px;
+    filter: brightness(50%); /* Reduzir o espaçamento entre a imagem e o conteúdo */
 }
 
 .services-container {
@@ -54,6 +88,7 @@ h1 {
     padding: 5rem;
     max-width: 1200px; /* Define uma largura máxima */
     margin: 30px;
+    margin-top: -70px;
 }
 
 .service-box {
@@ -61,10 +96,17 @@ h1 {
     color: #fff;
     border-radius: 8px;
     padding: 1rem;
-    width: 120px; /* Aumenta a largura das caixas */
+    width: 120px;
     text-align: center;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
 }
+
+.service-box:active {
+    border: 2px solid #4CAF50;
+    transform: scale(1.1);
+}
+
 
 .service-box img {
     width: 80px;
