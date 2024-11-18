@@ -1,19 +1,13 @@
-window.onload = function() {
-    var popup = document.getElementById('popup');
-    var closeButton = document.getElementById('close-popup');
-  
-    // Exibe o pop-up quando a página carrega
-    popup.style.display = 'flex';
-  
-    // Fecha o pop-up ao clicar no botão "Entendi"
-    closeButton.onclick = function() {
-        popup.style.display = 'none';
-    };
-  
-    // Fecha o pop-up ao clicar fora do conteúdo do pop-up
-    window.onclick = function(event) {
-        if (event.target == popup) {
-            popup.style.display = 'none';
+function toggleServices(serviceId) {
+    const serviceBoxContainer = document.getElementById(serviceId);
+
+    // Esconde todas as divs de serviço antes de mostrar a selecionada
+    document.querySelectorAll('.service-box-container').forEach(container => {
+        if (container.id !== serviceId) {
+            container.classList.remove("show");
         }
-    };
-  };
+    });
+    
+    // Alterna a classe "show" para exibir/esconder a div selecionada
+    serviceBoxContainer.classList.toggle("show");
+}

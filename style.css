@@ -1,14 +1,13 @@
 body {
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-image: url('images/background.png'); /* Substitua por sua imagem de fundo */
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
+    font-family: "Bricolage Grotesque", sans-serif;
+    }
 
     header {
         display: flex;
@@ -17,7 +16,7 @@ body {
         gap: 1rem;
         flex-wrap: wrap;
         padding: 10px 0;
-        background-color: #b5b5b5;
+        background-color: #7a7a7a;
         width: 100%;
         z-index: 1000;
         position: fixed; /* Fixa o header no topo */
@@ -42,7 +41,7 @@ body {
 .img-fundo-main {
     width: 100%;
     height: auto;
-    margin-top: 80px; /* Reduzir o espaçamento entre a imagem e o conteúdo */
+    margin-top: auto;
 }
 
 .container {
@@ -52,7 +51,7 @@ body {
 }    
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #2B2B2B;
     letter-spacing: 2px;
 
