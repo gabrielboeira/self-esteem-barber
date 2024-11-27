@@ -137,6 +137,20 @@ h1 {
     background-color: #0a7710;
 }
 
+.btn-agendar-app {
+    background-color: #4c82af;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-agendar-app:hover {
+    background-color: #0a4f77;
+}
+
 /* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
     .service-box {
