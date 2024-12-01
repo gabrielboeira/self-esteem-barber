@@ -38,7 +38,7 @@ h1 {
 }
 
 .barba {
-    margin-top: -50px;
+    margin-top: -3px;
     font-size: 33px;
     font-family: "Bricolage Grotesque", sans-serif;
     text-decoration: overline;
@@ -82,36 +82,39 @@ h1 {
 
 .services-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 5rem;
-    max-width: 1200px; /* Define uma largura máxima */
-    margin: 30px;
-    margin-top: -70px;
+    flex-direction: column; /* Alinha os elementos em uma coluna */
+    align-items: center;
+    gap: 1rem; /* Espaçamento uniforme entre os elementos */
+    padding: 2rem 1rem; /* Reduz o padding para dispositivos menores */
+    margin-top: -25px;; /* Certifica-se de que está abaixo do header */
 }
 
 .service-box {
-    background-color: #000;
-    color: #fff;
-    border-radius: 8px;
-    padding: 1rem;
-    width: 120px;
-    text-align: center;
-    border: 2px solid transparent;
-    transition: all 0.3s ease-in-out;
+    display: flex; /* Configura como flex para alinhar os elementos horizontalmente */
+    justify-content: space-between; /* Espaça o ícone e o botão nas extremidades */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 400px; /* Define uma largura máxima para telas maiores */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    transition: transform 0.3s ease;
 }
 
-.service-box:active {
-    border: 2px solid #4CAF50;
-    transform: scale(1.1);
+.service-box:hover {
+    transform: scale(1.02); /* Pequeno efeito de aumento ao passar o mouse */
 }
 
+.disc {
+    font-size: 13px;
+}
 
 .service-box img {
-    width: 80px;
-    height: 80px;
-}
+    width: 50px; /* Ajuste do tamanho do ícone */
+    height: 50px;
+}    
 
 .service-box h3 {
     margin: 1rem 0 0.5rem;
@@ -128,7 +131,7 @@ h1 {
     color: white;
     padding: 0.5rem 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -157,3 +160,4 @@ h1 {
         width: 100%; /* Ocupa 100% da largura em telas pequenas */
     }
 }
+
